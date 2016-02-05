@@ -74,65 +74,17 @@ echo Delete KB3080149 (Telemetry)
 start "title" /b /wait wusa.exe /kb:3080149 /uninstall /quiet /norestart
 
 REM --- uninstall my own added updates
-echo Delete KB3035583
-start "title" /b /wait wusa.exe /kb:3035583 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3068708
-start "title" /b /wait wusa.exe /kb:3068708 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3022345
-start "title" /b /wait wusa.exe /kb:3022345 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3075249
-start "title" /b /wait wusa.exe /kb:3075249 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3080149
-start "title" /b /wait wusa.exe /kb:3080149 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB2976978
-start "title" /b /wait wusa.exe /kb:2976978 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3044374
-start "title" /b /wait wusa.exe /kb:3044374 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB2952664
-start "title" /b /wait wusa.exe /kb:2952664 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB2990214
-start "title" /b /wait wusa.exe /kb:2990214 /uninstall /quiet /norestart
-echo  - next
 echo Delete KB3046480
 start "title" /b /wait wusa.exe /kb:3046480 /uninstall /quiet /norestart
 echo  - next
-echo Delete KB3035583
-start "title" /b /wait wusa.exe /kb:3035583 /uninstall /quiet /norestart
-echo  - next
 echo Delete KB3058168
 start "title" /b /wait wusa.exe /kb:3058168 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3068708
-start "title" /b /wait wusa.exe /kb:3068708 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3075249
-start "title" /b /wait wusa.exe /kb:3075249 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3080149
-start "title" /b /wait wusa.exe /kb:3080149 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3022345
-start "title" /b /wait wusa.exe /kb:3022345 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3050267
-start "title" /b /wait wusa.exe /kb:3050267 /uninstall /quiet /norestart
 echo  - next
 echo Delete KB3065988
 start "title" /b /wait wusa.exe /kb:3065988 /uninstall /quiet /norestart
 echo  - next
 echo Delete KB3083325
 start "title" /b /wait wusa.exe /kb:3083325 /uninstall /quiet /norestart
-echo  - next
-echo Delete KB3075853
-start "title" /b /wait wusa.exe /kb:3075853 /uninstall /quiet /norestart
 echo  - next
 echo Delete KB3083324
 start "title" /b /wait wusa.exe /kb:3083324 /uninstall /quiet /norestart
@@ -142,7 +94,7 @@ timeout 5
 REM --- Hide updates
 echo Hiding updates, may take a while be patient...
 
-start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 971033 2902907 2952664 2976978 2977759 2990214 3012973 3014460 3015249 3021917 3022345 3035583 3044374 3050265 3050267 3065987 3068708 3075249 3075851 3075853 3080149 
+start "title" /b /wait cscript.exe "%~dp0HideWindowsUpdates.vbs" 971033 2902907 2952664 2976978 2977759 2990214 3012973 3014460 3015249 3021917 3022345 3035583 3044374 3050265 3050267 3065987 3068708 3075249 3075851 3075853 3080149 3046480 3058168 3065988 3083325 3083324
 echo  - done.
 
 REM --- Disable tasks
